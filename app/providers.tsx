@@ -10,7 +10,6 @@ import { useEffect } from 'react';
 
 const wagmiConfig = createConfig({
   chains: [flowMainnet],
-  // connectors: [injected()],
   ssr: true,
   transports: {
     [flowMainnet.id]: http(),
@@ -29,6 +28,7 @@ const privyConfig: PrivyClientConfig = {
   loginMethodsAndOrder: {
     primary: ['telegram', 'sms', 'email'],
   },
+  defaultChain: flowMainnet,
   supportedChains: [flowMainnet],
 }
 

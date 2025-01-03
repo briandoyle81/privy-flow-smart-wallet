@@ -1,4 +1,3 @@
-// components/LoginWithPrivy.tsx
 'use client';
 
 import { usePrivy } from '@privy-io/react-auth';
